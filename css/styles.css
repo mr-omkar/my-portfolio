@@ -1,0 +1,366 @@
+:root{
+    --primary:#BD5D38;
+    --primary-dark:#9e4828;
+    --secondary:#1f2937;
+    --light:#f8fafc;
+    --white:#ffffff;
+    --text:#4b5563;
+    --border:#e5e7eb;
+    --gradient:linear-gradient(135deg,#BD5D38 0%,#e78b5c 100%);
+    --bg-gradient:linear-gradient(135deg,#fdfbfb 0%,#ebedee 100%);
+}
+
+body{
+    background:var(--bg-gradient);
+    color:var(--text);
+    font-family:'Muli',sans-serif;
+}
+
+body {
+  padding-top: 3.375rem;
+  color: #6c757d;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+h1 {
+  line-height: 1;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+#sideNav{
+    background:linear-gradient(180deg,#1f2937 0%,#111827 100%) !important;
+    box-shadow:8px 0 30px rgba(0,0,0,.15);
+}
+
+#sideNav .nav-link{
+    color:#d1d5db;
+    font-weight:600;
+    transition:.3s;
+}
+
+#sideNav .nav-link:hover{
+    color:#fff;
+    transform:translateX(6px);
+}
+
+#sideNav .nav-link.active{
+    color:#fff;
+}
+
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon:last-child {
+  margin-right: 0;
+}
+
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+section.resume-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+section.resume-section .resume-section-content {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.img-profile{
+    border:5px solid rgba(255,255,255,.2);
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+.skill-card {
+    height: 100%;
+    padding: 28px;
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #eee;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: all .35s ease;
+    border-top:5px solid #BD5D38;
+}
+.skill-card{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(0,0,0,.15);
+}
+
+.skill-card{
+    text-align:center;
+}
+
+.skill-card h4{
+    font-size:1.2rem;
+    font-weight:700;
+    margin-bottom:20px;
+    color:#343a40;
+} 
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill-card ul 
+{
+  margin: 0px;
+  padding: 0px;
+}
+.skill-badge {
+    background: #f3f5f7;
+    color: #444;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: .88rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.skill-badge:hover {
+    background: #BD5D38;
+    color: white;
+    cursor: default;
+}
+
+.row-3 > div {
+    margin-bottom: 24px;
+}
+
+
+#about{
+    background:
+        radial-gradient(circle at top right,#ffe8dc 0%,transparent 35%),
+        radial-gradient(circle at bottom left,#fff1e8 0%,transparent 35%);
+}
+
+.resume-section{
+    min-height:100vh;
+}
+
+h1{
+    font-size:4.8rem;
+    color:#1f2937;
+}
+
+.text-primary{
+    color:#BD5D38 !important;
+}
+
+h2{
+    color:#1f2937;
+    font-weight:700;
+}
+
+.social-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:var(--gradient);
+    color:white;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:12px;
+    transition:.35s;
+    box-shadow:0 8px 20px rgba(189,93,56,.3);
+}
+
+.social-icon:hover{
+    transform:translateY(-6px) rotate(8deg);
+    box-shadow:0 15px 30px rgba(189,93,56,.45);
+}
+
+.skill-card{
+    background:rgba(255,255,255,.95);
+    border:none;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    overflow:hidden;
+    position:relative;
+}
+
+.skill-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:var(--gradient);
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.skill-icon{
+    width:70px;
+    height:70px;
+    background:var(--gradient);
+    border-radius:50%;
+    color:white;
+    font-size:28px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 10px 20px rgba(189,93,56,.3);
+}
+
+.badge{
+    padding:10px 16px;
+    border-radius:30px;
+    font-size:.85rem;
+    transition:.3s;
+    border:1px solid #ececec;
+}
+
+.badge:hover{
+    background:#BD5D38 !important;
+    color:#fff !important;
+    transform:scale(1.05);
+}
+
+
+#experience{
+    background:#ffffff;
+}
+
+#education{
+    background:#f8fafc;
+}
+
+#skills{
+    background:#fffdfc;
+}
+
+#projects{
+    background:#f8fafc;
+}
+
+#resume{
+    background:#ffffff;
+}
+
+
+.btn-primary{
+    background:var(--gradient);
+    border:none;
+    border-radius:30px;
+    padding:12px 28px;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
